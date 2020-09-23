@@ -4,8 +4,8 @@ function solve(arrInput) {
     let columnsArr = [];
 
     for (let i = 0; i < matrix.length; i++) {
-
         let tempArr = [];
+        
         for (let j = 0; j < matrix.length; j++) {
             tempArr.push(matrix[j][i])
         }
@@ -14,7 +14,7 @@ function solve(arrInput) {
     }
 
     let flattenedColArr = columnsArr.map(x => x.reduce((acc, currentValue) => acc + currentValue, 0));
-    isWithMagicalCols = flattenedColArr.every(x => x === flattenedColArr[0]);
+    let isWithMagicalCols = flattenedColArr.every(x => x === flattenedColArr[0]);
     
     let flattenedRowArr = matrix.map(x => x.reduce((acc, currentValue) => acc + currentValue, 0));
     let isWithMagicalRows = flattenedRowArr.every(x => x === flattenedRowArr[0]);
