@@ -1,10 +1,10 @@
 function solve() {
 
     class Person {
-        constructor(firstName, lastName, age, email) {
+        constructor(firstName = '', lastName = '', age = '', email = '') {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.age = Number(age);
+            this.age = age;
             this.email = email;
         }
 
@@ -13,7 +13,7 @@ function solve() {
         }
     }
 
-    let person = new Person('Sharky', 'Shark', '16', 'sharkythedog@gmail.com')
+    let person = new Person('Sharky', 'Shark', '16')
     console.log(person.toString());
 }
 
