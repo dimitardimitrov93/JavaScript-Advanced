@@ -1,10 +1,10 @@
 function solve() {
 
     let arrInput = [
-        ['Anna', 'Simpson', 22, 'anna@yahoo.com'],
+        ['Anna', 'Simpson', '22', 'anna@yahoo.com'],
         ['SoftUni'],
-        ['Stephan', 'Johnson', 25],
-        ['Gabriel', 'Peterson', 24, 'g.p@gmail.com'],
+        ['Stephan', 'Johnson', '25'],
+        ['Gabriel', 'Peterson', '24', 'g.p@gmail.com'],
     ];
 
     class Person {
