@@ -1,10 +1,10 @@
 function arrayMap(arr, func) {
-    let result = arr.reduce((acc, x) => {
+    let mappedArr = arr.reduce((acc, x) => {
         acc.push(func(x))
         return acc;
     }, []);
 
-    return result;
+    return mappedArr;
 }
 
 let nums = [1,2,3,4,5];
