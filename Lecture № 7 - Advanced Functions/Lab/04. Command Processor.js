@@ -15,7 +15,7 @@ function solution() {
             return string;
         },
         print: () => console.log(string),
-    }
+    };
 }
 
 let firstZeroTest = solution();
