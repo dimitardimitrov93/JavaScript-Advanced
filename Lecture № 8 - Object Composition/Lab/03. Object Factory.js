@@ -8,6 +8,9 @@ function solve(str) {
             resultObj[key] = value;
         });
     });
+
+    // Alternative Solution
+    // arr.reduce((acc, x) => ({...acc, ...x}), {});
     
     return resultObj;
 }
