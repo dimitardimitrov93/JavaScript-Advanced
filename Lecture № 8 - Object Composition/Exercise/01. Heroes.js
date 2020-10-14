@@ -8,8 +8,8 @@ function solve() {
                 mana: 100,
 
                 cast: function (spell) {
-                    this.mana -= 1;
                     console.log(`${name} cast ${spell}`);
+                    this.mana--;
                 },
             };
         },
@@ -21,8 +21,8 @@ function solve() {
                 stamina: 100,
 
                 fight: function () {
-                    this.stamina -= 1;
                     console.log(`${name} slashes at the foe!`);
+                    this.stamina--;
                 },
             };
         }
